@@ -37,4 +37,4 @@ html_static_path = ['_static']
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath(r'C:\Users\He\PycharmProjects\Polarization-Defect-Detection'))
+sys.path.insert(0, os.path.abspath(r'https://github.com/righterTY/Polarization-Defect-Detection'))
