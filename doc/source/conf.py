@@ -8,7 +8,7 @@
 
 project = 'Polarization_Defect_Detection'
 copyright = '2022, A&F'
-author = 'A&F'
+author = 'U&F Polarization'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------
@@ -16,13 +16,18 @@ release = '1.0'
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.doctest',
+    'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.mathjax',
-]
+    'sphinx.ext.napoleon',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.autosectionlabel',
+    'myst_parser',
+    'sphinx_copybutton',
+    'sphinx.ext.autodoc.typehints',
+]  # yapf: disable
+autodoc_typehints = 'description'
+myst_heading_anchors = 4
+myst_enable_extensions = ['colon_fence']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -37,4 +42,4 @@ html_static_path = ['_static']
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../'))
+sys.path.insert(0, os.path.abspath('../../..'))
