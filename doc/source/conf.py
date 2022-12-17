@@ -21,7 +21,6 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinx.ext.autosectionlabel',
-    'sphinx_copybutton',
     'sphinx.ext.autodoc.typehints',
 ]  # yapf: disable
 
